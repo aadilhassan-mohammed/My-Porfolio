@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between images */
+        }
+        .gallery-item img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 300px; /* Optional: limit max width */
+            cursor: pointer; /* Change cursor to pointer for clickable images */
+            transition: transform 0.2s; /* Smooth scaling effect */
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+        .liked {
+            border: 2px solid red; /* Indicate liked state */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="heading">Gallery</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>My Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    
+                </div>
+                <div class="gallery-item">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/715/482/desktop-wallpaper-mahesh-babu-s-maharshi-second-look-still-maharshi-mahesh-babu-thumbnail.jpg" alt="Image 2"/>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/210/214/desktop-wallpaper-%E2%9C%85-45-mahesh-babu-mahesh-babu-thumbnail.jpg" alt="Image 3"/>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/58/332/desktop-wallpaper-superstar-mahesh-babu-s-sarileru-neekevvaru-movie-first-look-mahesh-babu-thumbnail.jpg" alt="Image 4"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Email: <a href="mailto:aadilh26519@gmail.com">aadilh26519@gmail.com</a> | © 2023 Aadil Hassan. All rights reserved.</p>
+    </footer>
+    <script>
+        const images = document.querySelectorAll('.gallery-item img');
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('liked'); // Toggle liked state
+            });
+        });
+    </script>
+</body>
+</html>

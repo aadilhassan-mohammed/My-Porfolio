@@ -1,0 +1,149 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light grey to contrast with Ferrari's red */
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #004d00, #000000); /* Thick green to black */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .subheading {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2f6525; /* Ferrari Yellow on hover */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    color: #94e850; /* Ferrari Red */
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2afb65; /* Ferrari Red */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #9ef25a; /* Ferrari Yellow on hover */
+}
+
+/* Interests Section */
+#interests {
+    padding: 50px 0;
+    background: #f1f1f1; /* Light grey for contrast */
+}
+
+.interests-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.interests {
+    background-color: #b9e929; /* Ferrari Red */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* University Section */
+#University {
+    padding: 50px 0;
+    background-color: #020000;
+}
+
+#University h2 {
+    color: #b0e600; /* Ferrari Red */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+background-color: #000000; /* Black */
+
+    color: white;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.social-icons a:hover {
+    color: #4ef545; /* Ferrari Yellow on hover */
+}
+
+.gallery-img1 {
+    height: 100px;
+    width: 100px;
+}
+
+.portfolio-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

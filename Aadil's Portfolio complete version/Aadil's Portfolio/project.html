@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .expand-button {
+            background-color: #0c260b; /* Button color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            padding: 10px 15px; /* Padding */
+            cursor: pointer; /* Pointer cursor */
+            margin-top: 10px; /* Margin */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        .expand-button:hover {
+            background-color: #154128; /* Darker shade on hover */
+        }
+        .project-details {
+            display: none; /* Hidden by default */
+            margin-top: 10px; /* Margin for details */
+            padding: 10px; /* Padding for details */
+            border: 1px solid #ddd; /* Border for details */
+            border-radius: 5px; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="heading">Projects</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="project">
+        <div class="container">
+            <div class="project">
+                <h3 class="project-title">Maze Solver Encryption System</h3>
+                <button class="expand-button">Expand</button>
+                <div class="project-details">
+                    <p>The Maze Solver Encryption System is a cryptographic technique that uses an algorithm inspired by maze solving to generate encryption keys. The system maps out a maze on a grid, and the pathfinding algorithm generates a unique key based on the steps taken to navigate the maze. This key is then used to encrypt and decrypt messages using XOR-based operations, ensuring secure communication.</p>
+                </div>
+            </div>
+            <div class="project">
+                <h3 class="project-title">Smart Inventory Management System</h3>
+                <button class="expand-button">Expand</button>
+                <div class="project-details">
+                    <p>The Smart Inventory Management System is a Python-based application designed to optimize inventory tracking and management for businesses. By using real-time data analytics, it predicts stock shortages, automates reordering, and tracks product sales trends. The system also includes an integrated loyalty program that rewards frequent suppliers and helps businesses streamline their supply chain and reduce overhead costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Email: <a href="mailto:aadilh26519@gmail.com">aadilh26519@gmail.com</a> | © 2023 Aadil Hassan. All rights reserved.</p>
+    </footer>
+    <script>
+        const buttons = document.querySelectorAll('.expand-button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const details = button.nextElementSibling; // Get the next sibling (project details)
+                if (details.style.display === "none" || details.style.display === "") {
+                    details.style.display = "block"; // Show details
+                    button.textContent = "Collapse"; // Change button text
+                } else {
+                    details.style.display = "none"; // Hide details
+                    button.textContent = "Expand"; // Change button text
+                }
+            });
+        });
+    </script>
+</body>
+</html>
